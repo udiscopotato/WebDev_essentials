@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+</head>
+<body>
+    <div>
+        <form action="message.html" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+            <br />
+            <label for="mail">Email id: </label>
+            <input type="email" name="email" id="mail">
+            <br />
+            <label for="quantity">Quantity: </label>
+            <input type="number" name="quantity" id="quantity" min="1" max="10">
+            <br />
+            <label for="src">Search Product: </label>
+            <input type="search" id="src" name="searched">
+            <br />
+            <label for="sdate">Starting Date: </label>
+            <input type="date" name="S-Date" id="sdate" min="1999-06-01" max="2020-04-21">
+            <br />
+            <label for="pass">Password: </label>
+            <input type="password" name="pass" id="pass" required>
+            <br />
+            <label for="add">Address</label>
+            <textarea name="address" id="add" cols="30" rows="10"></textarea>
+            <br />
+            <label for="drop">Choose One:</label>
+            <select name="city" id="drop">
+                <option value="bang">Bangalore</option>
+                <option value="del">Delhi</option>
+                <option value="mum">Mumbai</option>
+                <option value="kol">Kolkata</option>
+                <option value="chenn">Chennai</option>
+            </select>
+            <br />
+            <label for="chk">Your Hobby:</label>
+            <fieldset id="chk">
+                <label for=""><input type="checkbox" name="cric" value="BalleBaj">Cricket</label>
+                <label for=""><input type="checkbox" name="game" value="PUBG">Gaming</label>
+                <label for=""><input type="checkbox" name="sing" value="SaReGaMaPa">Singing</label>
+                <label for=""><input type="checkbox" name="dance" value="TakDhinakDha">Dancing</label>
+            </fieldset>
+            <br />
+            <input type="radio" name="" id="">
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
