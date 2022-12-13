@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- this is Extrnal CSS  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- this is Internal CSS  -->
+    <style>
+        h1{
+            color: #9C254D;
+            text-decoration: line-through;
+        }
+        p{
+            color:#9C254D;
+        }
+        .para{
+            color:aqua;
+        }
+
+
+        /* this is a psudo-Class */
+        :first-letter{
+            font-size: 2em;
+            font-weight: bold;
+            color: goldenrod;
+        }
+
+        .para::first-line{
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types of CSS</h1>
+    <!-- this is inline CSS  -->
+    <p style="color: brown ;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident repellat atque quas vero ea odit facere reiciendis facilis, laborum soluta delectus reprehenderit rerum quos minus eius odio! Possimus aliquid incidunt debitis veritatis illo sed assumenda similique aliquam facilis alias praesentium numquam ad pariatur architecto, sit iste eligendi corporis fuga corrupti!
+    </p>
+
+    <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint ex molestias incidunt cumque obcaecati vero consequatur nisi, excepturi pariatur, illum dolores necessitatibus quam reiciendis perspiciatis? Eos commodi ea laborum, repudiandae, quam qui excepturi inventore quibusdam quasi molestiae dolores iusto expedita, aliquam sint modi totam porro fugit alias. Cum, laudantium?
+    </p>
+</body>
+</html>

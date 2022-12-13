@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Output</title>
+</head>
+<body>
+    <!-- JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log() -->
+
+<p id="demo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatum excepturi veritatis perferendis nisi laudantium dolor voluptatem? Mollitia fugit, iste reiciendis a, exercitationem, dolorum rem magnam sit quia laudantium autem.</p>
+<script>
+    document.getElementById("demo1").innerHTML="Hello !";
+</script>
+<script>
+    document.write("Hello There this is written using Document.write()");
+</script>
+<script>
+    window.alert("This is written using Window.alert()")
+</script>
+<script>
+    console.log(5+6);
+</script>
+<button type="button" onclick="window.print()">Print</button>
+<h3>this Keyword</h3>
+<script>
+    var car= {
+        company:"Toyota",
+        name:"Supra",
+        model:"BS6",
+        hp:1000,
+        fullname: function(){
+            return this.company+" "+this.name;
+        }
+    };
+</script>
+<p id="demo2"></p>
+<button type="button" onclick="document.getElementById('demo2').innerHTML=car.fullname();">Click</button>
+<p id="demo3"></p>
+<button type="button" onclick="document.getElementById('demo3').innerHTML= new Date()">Today's Date</button>
+<p id="demo4"></p>
+<button type="button" onclick="document.getElementById('demo4').innerHTML= new Date('1999-08-06')">My Birthday</button>
+</body>
+</html>
